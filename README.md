@@ -16,4 +16,6 @@ Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSV
 
 > UPDATE: They just published 2019.1.0f2, we'll stick with 2018.3.x still.
 
+[Countdown to start](https://www.timeanddate.com/countdown/launch?iso=20190426T20&p0=1397&msg=kanium+-+unity+event&font=slab&csz=1)
+
 **TO BE CONTINUED... soon**
