@@ -13,7 +13,7 @@ Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSV
 > (preferably get a 2018.3.x, they are pretty compatible, current is 2018.3.12f)
 > UPDATE: They just published 2019.1.0f2, we'll stick with 2018.3.x still.
 
-> 2. Download the project and unpack it somewhere you want
+> 2. [Download]() the project and unpack it somewhere you want
 > 2.1 From Unity Hub, open the project ( Projects -> Open ...)
 > 2.2 Select the zip folder you unpacked before (/Kanium_challenge_2019)
 > Use version control (which is a good thing to learn as well) if you can.
