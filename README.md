@@ -34,7 +34,7 @@ Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSV
 >> - hold the button
 >> - release the button
 
-> UPDATE: I added a script called "controlSchema" in the demo-scene to preview and test inputs. This is done by pressing spacebar in the example scene.
+> UPDATE: I added a script called "controlSchema" in the demo-scene to preview and test inputs. This is done by pressing spacebar in the example scene. You have to manually assign this to a gameobject though, just drag & drop in editor on an object.
 
 > This should emphasize that the game should be VERY simple. This does not mean that you cannot have depth in your game, it is rather to ground your expectations for a two day jam. If you can, try to come up with mechanics or events that complement such simple control schema.
 
