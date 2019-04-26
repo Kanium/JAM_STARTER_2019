@@ -16,9 +16,9 @@ Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSV
 > 2. Download the project and unpack it somewhere you want
 > 2.1 From Unity Hub, open the project ( Projects -> Open ...)
 > 2.2 Select the zip folder you unpacked before (/Kanium_challenge_2019)
-> Use version control (which is recommended and a good thing to learn as well) if you can.
+> Use version control (which is a good thing to learn as well) if you can.
 
-> 4. Think of the game you wish to make, then simplify it a hundred times over.
+> 4. Think of the game you wish to make, then simplify it a hundred times over. 
 
 ![SIMPLIFY](https://media0.giphy.com/media/IHnROpQICe4kE/giphy.gif?cid=790b76115cb70f3c43726e732e1794be)
 
@@ -31,17 +31,17 @@ Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSV
 >> - hold the button
 >> - release the button
 
-> UPDATE: I added a script called "controlSchema" in the demo-scene to preview and test inputs.
+> UPDATE: I added a script called "controlSchema" in the demo-scene to preview and test inputs. This is done by pressing spacebar in the example scene.
 
 > This should emphasize that the game should be VERY simple. This does not mean that you cannot have depth in your game, it is rather to ground your expectations for a two day jam. If you can, try to come up with mechanics or events that complement such simple control schema.
 
-> 1. Try to not share what you are doing too much, more fun looking at other peoples stuff after. Tech issues and such aside of course. This challenge is for learning stuff together after all.
+> 1. No premade assets, more fun this way and it doesnt matter what it looks like. Draw stick figures with paint or record screams with your mic. Copying code and stuff from other projects is cool as long as comment or present sources somewhere.
 
-> 2. No premade assets, more fun this way and it doesnt matter what it looks like. Draw stick figures with paint or record screams with your mic. Copying code and stuff from other projects is cool as long as comment or present sources somewhere.
+> 2. Time limit is a weekend basically. Time starts on posting this and ends on sunday night.
 
-> 3. Time limit is ~48h (a weekend basically). Time starts on posting this and ends on sunday night.
+> 3. Try to not share what you are doing too much during the weekend, more fun looking at other peoples stuff after. Tech issues and such aside of course. This challenge is for learning stuff together after all.
 
-> 4. Must share end result, whatever it is. Again, does not matter if it is unfinished or very simple, everyone is doing different stuff at different levels and the point is to learn something.
+> 4. Must share end result, whatever it is. Again, does not matter if it is unfinished or very simple, everyone is doing different stuff at different levels and the point is to learn something. We'll have some kind of meeting afterwards where we can test out everyones stuff together!
 
 > 5. MOST IMPORTANT RULE: try to learn something, have fun doing it.
 
@@ -69,4 +69,4 @@ Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSV
 * Youtube is full of "how to do this thing in unity" videos.
 * Ask me in discord (Shinpai) if you need help with anything.
 ---
-last edit: 17.04.2019 - haeejuut
+last edit: 26.04.2019 - haeejuut
