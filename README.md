@@ -53,6 +53,7 @@ Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSV
 
 > Tutorials 
 * [Official](https://unity3d.com/learn/tutorials)
+* [RedBlob theory/math stuff](https://www.redblobgames.com/)
 * [Noobtuts](https://noobtuts.com/unity)
 * [catlikecoding](https://catlikecoding.com/unity/tutorials/)
 * [tutorialspoint](https://www.tutorialspoint.com/unity/index.htm)
