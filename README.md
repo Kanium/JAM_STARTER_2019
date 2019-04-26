@@ -2,20 +2,28 @@
 A gamejam sort of development challenge/workshop to learn to use Unity. Maybe just use it for motivation to get started with unity.
 ---
 
-### Instructions
+### Instructions (for windows users. other users: figure it out)
 
-> 1. Download unity OR unity hub(recommended) [from here](https://unity3d.com/get-unity/download)
+> 1. Download unity hub(**recommended**) [from here](https://unity3d.com/get-unity/download)
+> 1.1 Install unity hub
 
-Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSVKfrr4agsquOlUs5s1wlfK7Kng95hLQovGDfk/edit), should still apply except its easier now.
+Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSVKfrr4agsquOlUs5s1wlfK7Kng95hLQovGDfk/edit), should still apply except its easier now. You dont need these necessarily. Its easy.
 
-> 1.1 Install a unity version through hub (just get a 2018.3.x, they are pretty compatible, current is 2018.3.12f)
+> 1.2 Install a unity version through hub ( Installs -> Official )
+> (preferably get a 2018.3.x, they are pretty compatible, current is 2018.3.12f)
+> UPDATE: They just published 2019.1.0f2, we'll stick with 2018.3.x still.
 
-> 2. Make a new project
+> 2. Download the project and unpack it somewhere you want
+> 2.1 From Unity Hub, open the project ( Projects -> Open ...)
+> 2.2 Select the zip folder you unpacked before (/Kanium_challenge_2019)
+> Use version control (which is recommended and a good thing to learn as well) if you can.
 
-> If you want to use version control (which is recommended and a good thing to learn as well), ask Noctem for Kanium github access to get started.
+> 4. Think of the game you wish to make, then simplify it a hundred times over.
 
-> 3. Think of the game you wish to make, then simplify it a hundred times over.
-> 4. Make game
+![SIMPLIFY](https://media0.giphy.com/media/IHnROpQICe4kE/giphy.gif?cid=790b76115cb70f3c43726e732e1794be)
+
+> 5. Make game (read rules first)
+
 
 ### RULES:
 > 0. Your game must control using only ONE BUTTON! This includes such glorious events as: 
@@ -23,17 +31,22 @@ Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSV
 >> - hold the button
 >> - release the button
 
-> If you can, try to come up with mechanics or events that complement such simple control schema.
+> UPDATE: I added a script called "controlSchema" in the demo-scene to preview and test inputs.
+
+> This should emphasize that the game should be VERY simple. This does not mean that you cannot have depth in your game, it is rather to ground your expectations for a two day jam. If you can, try to come up with mechanics or events that complement such simple control schema.
 
 > 1. Try to not share what you are doing too much, more fun looking at other peoples stuff after. Tech issues and such aside of course. This challenge is for learning stuff together after all.
 
 > 2. No premade assets, more fun this way and it doesnt matter what it looks like. Draw stick figures with paint or record screams with your mic. Copying code and stuff from other projects is cool as long as comment or present sources somewhere.
 
-> 3. Time limit is 48h (a weekend basically). Time starts on posting this and ends on sunday night.
+> 3. Time limit is ~48h (a weekend basically). Time starts on posting this and ends on sunday night.
 
 > 4. Must share end result, whatever it is. Again, does not matter if it is unfinished or very simple, everyone is doing different stuff at different levels and the point is to learn something.
 
 > 5. MOST IMPORTANT RULE: try to learn something, have fun doing it.
+
+
+![root](https://media1.tenor.com/images/8a322e94bdb253a5fb42d010480d0163/tenor.gif?itemid=5104276)
 
 ### RESOURCES:
 [OFFICIAL DOCS](https://docs.unity3d.com/Manual/index.html)
@@ -56,3 +69,4 @@ Some older docs for unity hub [here](https://docs.google.com/document/d/10Z9lsSV
 * Youtube is full of "how to do this thing in unity" videos.
 * Ask me in discord (Shinpai) if you need help with anything.
 ---
+last edit: 17.04.2019 - haeejuut
