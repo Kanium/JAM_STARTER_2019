@@ -41,6 +41,7 @@ public class PlayerScript : MonoBehaviour
             case State.IDLE:
                 if (keydown)
                     current_state = State.POKING;
+                colliding = true;
                 break;
             case State.POKING:
                 if (keyup)
@@ -104,23 +105,19 @@ public class PlayerScript : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider col)
-    {
-        if (colliding)
+    {   
+        if (col.tag == "gameOverCollider")
         {
-            if (col.tag == "gameOverCollider")
-            {
-                Debug.Log("palkkiin osui");
-                col.GetComponentInParent<Rotator>().Drop();
-                colliding = false;
+            Debug.Log("palkkiin osui");
+            col.GetComponentInParent<Rotator>().Drop();
+            colliding = false;
 
-            }
-            if (col.tag == "pointCollider")
-            {
-                Debug.Log("pisteeseen osui");
-                col.GetComponentInParent<Rotator>().Cleared();
-                colliding = false;
-            }
-
+        }
+        if (col.tag == "pointCollider")
+        {
+            Debug.Log("pisteeseen osui");
+            col.GetComponentInParent<Rotator>().Cleared();
+            colliding = false;
         }
     }
 }

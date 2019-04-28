@@ -13,16 +13,30 @@ public class GameController : MonoBehaviour
 
     public PlayerScript player;
     public Text text_points;
-    public int points = 0;
+    public int points, hiscore;
     public int bump_index = 0;
-    public Image[] bumps;
+
+    public AudioSource[] audio_list;
+
+    private void Awake()
+    {
+        hiscore = PlayerPrefs.GetInt("hi-score");
+        points = PlayerPrefs.GetInt("points");
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(JustWait(3));
+        audio_list = GetComponents<AudioSource>();
+    }
+
+    private IEnumerator JustWait(float t)
+    {
+        Debug.Log("waited for");
+        yield return new WaitForSeconds(t);        
+        Debug.Log(t.ToString());
         new_level();
-        var temp = GameObject.Find("bumps");
-        bumps = temp.GetComponentsInChildren<Image>();
     }
 
     /// <summary>
@@ -30,7 +44,6 @@ public class GameController : MonoBehaviour
     /// </summary>
     void new_level()
     {
-        new WaitForSecondsRealtime(5f);
         Debug.Log("new level :" + hex_counter.ToString());
         StopAllCoroutines();
         hex_counter++;
@@ -51,6 +64,20 @@ public class GameController : MonoBehaviour
             current_level.rotator._min += 5;
             current_level.rotator._max += 15;
         }
+
+        if (hex_counter == 8)
+        {
+            changeScene();
+        }
+    }
+
+    public void changeScene()
+    {
+        PlayerPrefs.SetInt("points", points);
+        if (SceneManager.GetActiveScene().name == "blueScene")
+            SceneManager.LoadScene("redScene");
+        if (SceneManager.GetActiveScene().name == "redScene")
+            SceneManager.LoadScene("yellowScene");
     }
 
     // pump a new hex out every t seconds
@@ -63,17 +90,28 @@ public class GameController : MonoBehaviour
             StartCoroutine(pump_hex(t));
     }
 
+    public void GameOver()
+    {
+        hiscore = points;
+        int hi = PlayerPrefs.GetInt("hi-score");
+        if (hiscore > hi)
+            PlayerPrefs.SetInt("hi-score", points);
+        Debug.Log(hi + " " + hiscore);
+        SceneManager.LoadScene("menuScene");
+    }
 
     // Update is called once per frame
     void Update()
     {
-        // check for end of queue
-        if(current_level._jono.Count == 0)
-            new_level();
-        text_points.text = points.ToString() + " " + bump_index.ToString();
+        // update point text
+        text_points.text = "" + points; 
 
-        if (bump_index == 5)
-            SceneManager.LoadScene("gameScene");
+        // check for end of queue
+        if (current_level._jono.Count == 0)
+            new_level();        
+        // check for end of game
+        if (bump_index >= 5)
+            GameOver();
     }
 
     public class Level

@@ -45,6 +45,7 @@ public class Rotator : MonoBehaviour
     // onnistunut
     public void Cleared()
     {
+        gameController.audio_list[2].Play();
         not_cleared = false;
         gameController.points += UnityEngine.Random.Range(25, 75);
 
@@ -58,6 +59,7 @@ public class Rotator : MonoBehaviour
     // kusi
     public void Drop()
     {
+        gameController.audio_list[1].Play();
         gameController.bump_index++;
         if (not_cleared)
         {
